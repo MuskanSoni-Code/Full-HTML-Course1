@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50vw;
+    }
+    tr,
+    th,
+    td {
+      text-align: center;
+      border: 1px solid black;
+      padding: 4px;
+    }
+    #tableven tr:nth-child(even) {
+      background-color: rgb(221, 198, 168);
+    }
+    #tablecolgroup > colgroup {
+      background-color: rgb(165, 224, 204);
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile No.</th>
+      </tr>
+      <tr>
+        <td>Muskan</td>
+        <td>muskansoni9451@gmail.com</td>
+        <td>9140067028</td>
+      </tr>
+      <tr>
+        <td>Khushi</td>
+        <td>khushisoni9956@gmail.com</td>
+        <td>9876544567</td>
+      </tr>
+      <tr>
+        <td>Sakshi</td>
+        <td>Sakshisoni9187@gmail.com</td>
+        <td>9675456456</td>
+      </tr>
+    </table>
+    <br />
+    <h2>Even Color fillup Table</h2>
+    <table id="tableven">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile No.</th>
+      </tr>
+      <tr>
+        <td>Muskan</td>
+        <td>muskansoni9451@gmail.com</td>
+        <td>9140067028</td>
+      </tr>
+      <tr>
+        <td>Khushi</td>
+        <td>khushisoni9956@gmail.com</td>
+        <td>9876544567</td>
+      </tr>
+      <tr>
+        <td>Sakshi</td>
+        <td>Sakshisoni9187@gmail.com</td>
+        <td>9675456456</td>
+      </tr>
+    </table>
+    <br />
+    <h2>Using colgroup</h2>
+    <table id="tablecolgroup">
+      <colgroup>
+        <col span="2" />
+      </colgroup>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile No.</th>
+      </tr>
+      <tr>
+        <td>Muskan</td>
+        <td>muskansoni9451@gmail.com</td>
+        <td>9140067028</td>
+      </tr>
+      <tr>
+        <td>Khushi</td>
+        <td>khushisoni9956@gmail.com</td>
+        <td>9876544567</td>
+      </tr>
+      <tr>
+        <td>Sakshi</td>
+        <td>Sakshisoni9187@gmail.com</td>
+        <td>9675456456</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h2>Colspan</h2>
+    <table>
+      <tr>
+        <th colspan="2">Country</th>
+        <th>Country Code</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td colspan="3">India</td>
+        <td>IN</td>
+        <td>muskan@gmail.com</td>
+      </tr>
+      <tr>
+        <td>United State America</td>
+        <td>USA</td>
+        <td>sonimuskan@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Japan</td>
+        <td>JP</td>
+        <td>msk@gmail.com</td>
+      </tr>
+    </table>
+  </body>
+</html>
